@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Crisis Guidance Dashboard</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#e9edf2;
+}
+
+header{
+background:#111827;
+color:white;
+padding:16px 25px;
+font-size:22px;
+font-weight:bold;
+text-align:center;
+}
+
+.container{
+padding:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+padding:18px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
+color:#374151;
+}
+
+.mapCard{
+grid-column:span 2;
+}
+
+#map{
+height:500px;
+border-radius:8px;
+}
+
+#activityFeed{
+max-height:220px;
+overflow-y:auto;
+}
+
+#activityFeed div{
+padding:6px;
+border-bottom:1px solid #eee;
+background:white;
+transition:all 0.3s ease;
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+.legend span{
+display:block;
+margin-top:4px;
+font-weight:bold;
+}
+
+.safe{color:green}
+.caution{color:orange}
+.wait{color:red}
+
+.zone{
+font-size:15px;
+margin:8px 0;
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+input,select{
+width:100%;
+padding:6px;
+margin-top:4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Hybrid Intelligence Crisis Guidance Platform
+</header>
+
+<div class="container">
+
+<div class="card">
+<h3>System Overview</h3>
+<p>Hybrid Intelligence Crisis Decision Platform</p>
+<p>Sources: Government • NGO • Social Media • Human Reports</p>
+<button id="refreshBtn" onclick="manualRefresh()">Refresh Status</button>
+</div>
+
+<div class="card legend">
+<h3>Status Legend</h3>
+<span class="safe">● SAFE TO MOVE</span>
+<span class="caution">● CAUTION</span>
+<span class="wait">● WAIT FOR UPDATE</span>
+</div>
+
+<div class="card">
+<h3>Zone Status</h3>
+<div id="output"></div>
+</div>
+
+<div class="card">
+<h3>Live Crisis Activity</h3>
+<div id="activityFeed"></div>
+</div>
+
+<div class="card mapCard">
+<h3>Crisis Map</h3>
+<div id="map"></div>
+</div>
+
+<div class="card">
+<h3>Submit Field Report</h3>
+
+<label>Zone</label>
+<select id="zoneInput">
+<option value="Z01">Z01</option>
+<option value="Z02">Z02</option>
+<option value="Z03">Z03</option>
+</select>
+
+<label>Event Type</label>
+<select id="eventInput">
+<option value="flood">Flood</option>
+<option value="storm">Storm</option>
+<option value="wildfire">Wildfire</option>
+</select>
+
+<label>Severity (1–10)</label>
+<input type="number" id="severityInput" min="1" max="10">
+
+<label>Confidence (0–1)</label>
+<input type="number" id="confidenceInput" step="0.1" min="0" max="1">
+
+<br><br>
+<button onclick="submitReport()">Submit Report</button>
+
+</div>
+
+<div class="card">
+<h3>Decision Timeline</h3>
+<canvas id="timelineChart"></canvas>
+</div>
+
+</div>
+
+<script>
+
+var map = L.map('map').setView([20.5937,78.9629],5)
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+attribution:'Map data © OpenStreetMap contributors'
+}).addTo(map)
+
+let markers=[]
+let chart=null
+let seenReports=new Set()
+
+async function loadData(){
+
+let res=await fetch("/decision")
+let data=await res.json()
+
+document.getElementById("output").innerHTML=""
+
+markers.forEach(m=>map.removeLayer(m))
+markers=[]
+
+let coords={
+"Z01":[13.0827,80.2707],
+"Z02":[12.9716,77.5946],
+"Z03":[19.0760,72.8777]
+}
+
+for(let zone in data){
+
+let status=data[zone].recommended_action
+let score=Number(data[zone].decision_score).toFixed(2)
+let severity=data[zone].severity
+let confidence=data[zone].confidence.toFixed(2)
+let conflict=data[zone].conflict
+
+let className=""
+
+if(status=="SAFE TO MOVE") className="safe"
+if(status=="CAUTION") className="caution"
+if(status=="WAIT FOR UPDATE") className="wait"
+
+let html=`<div class="zone ${className}">
+<b>${zone}</b><br>
+Severity: ${severity}<br>
+Confidence: ${confidence}<br>
+Conflict: ${conflict}<br>
+<hr>
+Decision Score: ${score}<br>
+Action: ${status}
+</div>`
+
+document.getElementById("output").innerHTML+=html
+
+let color="gray"
+
+if(status=="SAFE TO MOVE") color="green"
+if(status=="CAUTION") color="orange"
+if(status=="WAIT FOR UPDATE") color="red"
+
+if(coords[zone]){
+
+let marker=L.circleMarker(coords[zone],{
+color:color,
+radius:10,
+fillOpacity:0.9
+})
+.addTo(map)
+.bindPopup(
+"<b>"+zone+"</b><br>"+
+"Severity:"+severity+"<br>"+
+"Action:"+status+"<br>"+
+"Score:"+score
+)
+
+markers.push(marker)
+
+}
+
+}
+
+}
+
+async function loadTimeline(){
+
+let res=await fetch("/history")
+let data=await res.json()
+
+let labels=[]
+let scores=[]
+
+data.slice(-10).forEach(entry=>{
+labels.push(new Date(entry.time*1000).toLocaleTimeString())
+scores.push(entry.score)
+})
+
+const ctx=document.getElementById('timelineChart')
+
+if(chart) chart.destroy()
+
+chart=new Chart(ctx,{
+type:'line',
+data:{
+labels:labels,
+datasets:[{
+label:'Decision Score Trend',
+data:scores,
+borderColor:'blue',
+fill:false,
+tension:0.3
+}]
+},
+options:{
+responsive:true,
+scales:{y:{beginAtZero:true,max:10}}
+}
+})
+
+}
+
+async function loadActivity(){
+
+let res=await fetch("/reports")
+let data=await res.json()
+
+let feed=document.getElementById("activityFeed")
+
+let r=data[data.length-1]
+if(!r) return
+
+let key=r.timestamp+r.location
+
+if(seenReports.has(key)) return
+seenReports.add(key)
+
+let entry=document.createElement("div")
+
+entry.innerHTML=
+"<b>"+r.location+"</b> • "+r.event_type+
+"<br>Severity:"+r.severity+
+" | Source:"+r.source
+
+feed.prepend(entry)
+
+while(feed.children.length>10){
+feed.removeChild(feed.lastChild)
+}
+
+}
+
+function refreshAll(){
+loadData()
+loadTimeline()
+loadActivity()
+}
+
+async function submitReport(){
+
+let zone=document.getElementById("zoneInput").value
+let event=document.getElementById("eventInput").value
+let severity=parseInt(document.getElementById("severityInput").value)
+let confidence=parseFloat(document.getElementById("confidenceInput").value)
+
+let report={
+location:zone,
+event_type:event,
+source:"human_operator",
+severity:severity,
+confidence:confidence
+}
+
+await fetch("/human-report",{
+method:"POST",
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify(report)
+})
+
+alert("Report submitted")
+
+}
+
+function manualRefresh(){
+
+document.getElementById("refreshBtn").innerText="Refreshing..."
+
+refreshAll()
+
+setTimeout(()=>{
+document.getElementById("refreshBtn").innerText="Refresh Status"
+},800)
+
+}
+
+setInterval(async function(){
+
+await fetch("/simulate")
+refreshAll()
+
+},5000)
+
+window.onload=refreshAll
+
+</script>
+
+</body>
+
+</html>

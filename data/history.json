@@ -1,0 +1,884 @@
+[
+  {
+    "time": 1773403503.932825,
+    "zone": "Z02",
+    "score": 3.6425339956247056,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403503.9404914,
+    "zone": "Z01",
+    "score": 4.769982593167294,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403508.8631127,
+    "zone": "Z02",
+    "score": 3.6407387503538797,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403508.8664942,
+    "zone": "Z01",
+    "score": 4.767633720576044,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403510.7448592,
+    "zone": "Z02",
+    "score": 3.6400537910775497,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403510.7489836,
+    "zone": "Z01",
+    "score": 4.766736396072349,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403513.8658667,
+    "zone": "Z02",
+    "score": 3.6389180226001034,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403513.8738167,
+    "zone": "Z01",
+    "score": 4.765247257595898,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403513.8942382,
+    "zone": "Z03",
+    "score": 3.7009746558789227,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403517.6780791,
+    "zone": "Z02",
+    "score": 3.6375311979019505,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403517.6780791,
+    "zone": "Z01",
+    "score": 4.763434965168532,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403517.6983557,
+    "zone": "Z03",
+    "score": 3.6995671753319077,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403519.274768,
+    "zone": "Z02",
+    "score": 3.6369505038777237,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403519.277482,
+    "zone": "Z01",
+    "score": 4.562980441581994,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403519.2936406,
+    "zone": "Z03",
+    "score": 3.6989770972089673,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403614.1148279,
+    "zone": "Z02",
+    "score": 3.6026242355621583,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403614.1185396,
+    "zone": "Z01",
+    "score": 4.519913666039364,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403614.1387832,
+    "zone": "Z03",
+    "score": 3.6640635472705894,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403616.1379788,
+    "zone": "Z02",
+    "score": 3.60189551959001,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403616.1429837,
+    "zone": "Z01",
+    "score": 4.518998822252904,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403616.1655133,
+    "zone": "Z03",
+    "score": 3.6633210927262065,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403621.1748278,
+    "zone": "Z02",
+    "score": 3.676984742819086,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773403621.1828697,
+    "zone": "Z01",
+    "score": 4.516722108215141,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773403621.2048283,
+    "zone": "Z03",
+    "score": 3.6614756862161144,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404228.8090112,
+    "zone": "Z02",
+    "score": 3.4859892834935686,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404228.8120143,
+    "zone": "Z01",
+    "score": 4.250471505084422,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404228.8283844,
+    "zone": "Z03",
+    "score": 3.4456418602875125,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404231.188967,
+    "zone": "Z02",
+    "score": 3.4851598181829977,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404231.1929078,
+    "zone": "Z01",
+    "score": 4.249459738465189,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404231.216262,
+    "zone": "Z03",
+    "score": 3.444819266665962,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404231.6297035,
+    "zone": "Z02",
+    "score": 3.4850062337682277,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404231.6326935,
+    "zone": "Z01",
+    "score": 4.249272876780192,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404231.6499524,
+    "zone": "Z03",
+    "score": 3.4446698869217474,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404236.6637733,
+    "zone": "Z02",
+    "score": 3.9649831511871083,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404236.6691177,
+    "zone": "Z01",
+    "score": 4.247133523342372,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404236.6843028,
+    "zone": "Z03",
+    "score": 3.442936335563596,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404242.2756813,
+    "zone": "Z02",
+    "score": 3.9627584968051246,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404242.2792857,
+    "zone": "Z01",
+    "score": 4.5429802531707715,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404242.3042097,
+    "zone": "Z03",
+    "score": 3.4410021814972893,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404761.2769418,
+    "zone": "Z02",
+    "score": 3.762357020049785,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404761.284654,
+    "zone": "Z01",
+    "score": 4.313234490807646,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404761.309663,
+    "zone": "Z03",
+    "score": 3.2669851812597357,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404761.6640756,
+    "zone": "Z02",
+    "score": 4.039986393380647,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404761.6710458,
+    "zone": "Z01",
+    "score": 4.3130678514291745,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404761.6956568,
+    "zone": "Z03",
+    "score": 3.26685909319188,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404764.1280618,
+    "zone": "Z02",
+    "score": 4.038991172140409,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404764.1363323,
+    "zone": "Z01",
+    "score": 4.312004797912608,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404764.1693447,
+    "zone": "Z03",
+    "score": 3.26605115792705,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404769.1636727,
+    "zone": "Z02",
+    "score": 4.036958016117769,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404769.1698556,
+    "zone": "Z01",
+    "score": 4.309835111331392,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404769.192897,
+    "zone": "Z03",
+    "score": 3.443976414150175,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404774.161337,
+    "zone": "Z02",
+    "score": 4.034941193203699,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404774.172335,
+    "zone": "Z01",
+    "score": 4.307679887835864,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404774.1967657,
+    "zone": "Z03",
+    "score": 3.4422537032967373,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773404779.2617152,
+    "zone": "Z02",
+    "score": 4.032883958566788,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404779.2644944,
+    "zone": "Z01",
+    "score": 4.305487134242886,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773404779.2853794,
+    "zone": "Z03",
+    "score": 3.9409783037628237,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405445.6065016,
+    "zone": "Z02",
+    "score": 3.7729386206587203,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405445.6164956,
+    "zone": "Z01",
+    "score": 4.02796786064384,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405445.6391056,
+    "zone": "Z03",
+    "score": 3.6869535813639875,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405449.3221142,
+    "zone": "Z02",
+    "score": 3.7715371485202795,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405449.329047,
+    "zone": "Z01",
+    "score": 4.026472889435913,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405449.3458312,
+    "zone": "Z03",
+    "score": 3.685587323749207,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405454.353223,
+    "zone": "Z02",
+    "score": 3.769640321014199,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405454.3645346,
+    "zone": "Z01",
+    "score": 4.024446084494366,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405454.402179,
+    "zone": "Z03",
+    "score": 3.683724426781858,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405459.360881,
+    "zone": "Z02",
+    "score": 4.509982927087796,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405459.369238,
+    "zone": "Z01",
+    "score": 4.022432681287302,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405459.4054317,
+    "zone": "Z03",
+    "score": 3.681882018335737,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405464.3730376,
+    "zone": "Z02",
+    "score": 4.507723253725596,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405464.378036,
+    "zone": "Z01",
+    "score": 4.020418639245887,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405464.4106333,
+    "zone": "Z03",
+    "score": 3.680039814262851,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405543.3375516,
+    "zone": "Z02",
+    "score": 4.533983081268227,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405543.3428404,
+    "zone": "Z01",
+    "score": 3.9887997640117856,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405543.3751671,
+    "zone": "Z03",
+    "score": 3.651097971881216,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405544.3585842,
+    "zone": "Z02",
+    "score": 4.533520218454506,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405544.3677018,
+    "zone": "Z01",
+    "score": 3.988391030675085,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405544.3926864,
+    "zone": "Z03",
+    "score": 4.036972458822422,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405549.1112435,
+    "zone": "Z02",
+    "score": 4.531366325966594,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405549.1242466,
+    "zone": "Z01",
+    "score": 3.9864945823171087,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405549.1537523,
+    "zone": "Z03",
+    "score": 4.0350510862690685,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405554.1302428,
+    "zone": "Z02",
+    "score": 4.529092839835685,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405554.1420255,
+    "zone": "Z01",
+    "score": 3.9844949565648657,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405554.168652,
+    "zone": "Z03",
+    "score": 4.033028265619445,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405559.1487515,
+    "zone": "Z02",
+    "score": 4.526820716455173,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405559.1604686,
+    "zone": "Z01",
+    "score": 3.9824960693213596,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405559.1885874,
+    "zone": "Z03",
+    "score": 4.0310044293763685,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405564.2762449,
+    "zone": "Z02",
+    "score": 4.5245004276453935,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405564.2804327,
+    "zone": "Z01",
+    "score": 4.009980868717474,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405564.2979176,
+    "zone": "Z03",
+    "score": 4.028945595617451,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405624.1899426,
+    "zone": "Z02",
+    "score": 4.49747631138384,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405624.199996,
+    "zone": "Z01",
+    "score": 3.9860275575668425,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405624.234217,
+    "zone": "Z03",
+    "score": 4.00487229825757,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405626.4284413,
+    "zone": "Z02",
+    "score": 4.496469768936564,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405626.4479601,
+    "zone": "Z01",
+    "score": 3.9851317064554324,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405626.4754257,
+    "zone": "Z03",
+    "score": 4.003974916375906,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405631.4759643,
+    "zone": "Z02",
+    "score": 4.49420097336992,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405631.4873526,
+    "zone": "Z01",
+    "score": 3.98312415624068,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405631.5060277,
+    "zone": "Z03",
+    "score": 4.00196139125953,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405636.482924,
+    "zone": "Z02",
+    "score": 4.491951541507245,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405636.49601,
+    "zone": "Z01",
+    "score": 3.981129852070995,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405636.526256,
+    "zone": "Z03",
+    "score": 3.9999530276636333,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405641.467384,
+    "zone": "Z02",
+    "score": 4.489713336126699,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405641.4800875,
+    "zone": "Z01",
+    "score": 3.9791463261425988,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405641.5036206,
+    "zone": "Z03",
+    "score": 3.997962806947205,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405646.4715822,
+    "zone": "Z02",
+    "score": 4.487467389542026,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405646.47958,
+    "zone": "Z01",
+    "score": 3.9771576583311234,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405646.5119686,
+    "zone": "Z03",
+    "score": 3.995961196885948,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405651.4663813,
+    "zone": "Z02",
+    "score": 4.485226781673287,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405651.4782999,
+    "zone": "Z01",
+    "score": 3.975170291441677,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405651.510168,
+    "zone": "Z03",
+    "score": 3.9939646418085575,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405656.453936,
+    "zone": "Z02",
+    "score": 4.482990539844433,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405656.4600568,
+    "zone": "Z01",
+    "score": 3.9731906566508797,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405656.4840689,
+    "zone": "Z03",
+    "score": 4.560973736975102,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405661.4584396,
+    "zone": "Z02",
+    "score": 4.480747819455703,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405661.488054,
+    "zone": "Z01",
+    "score": 3.971193646649332,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405661.5266178,
+    "zone": "Z03",
+    "score": 4.558674661778724,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405666.4653232,
+    "zone": "Z02",
+    "score": 4.478505155206811,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405666.4774547,
+    "zone": "Z01",
+    "score": 3.969212958593871,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405666.5063112,
+    "zone": "Z03",
+    "score": 4.556405381936105,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405671.4705417,
+    "zone": "Z02",
+    "score": 4.4762643587086925,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405671.4781187,
+    "zone": "Z01",
+    "score": 3.967228790458134,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405671.5148406,
+    "zone": "Z03",
+    "score": 4.554124100791862,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405676.474849,
+    "zone": "Z02",
+    "score": 4.4740250910282136,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773405676.488919,
+    "zone": "Z01",
+    "score": 3.96524159528808,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773405676.5065887,
+    "zone": "Z03",
+    "score": 4.551851599643515,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406112.9038465,
+    "zone": "Z02",
+    "score": 4.282984572389675,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406112.9203994,
+    "zone": "Z01",
+    "score": 3.7959251494140425,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406112.9514673,
+    "zone": "Z03",
+    "score": 4.357480975792883,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406115.424534,
+    "zone": "Z02",
+    "score": 4.281905213754061,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406115.4336672,
+    "zone": "Z01",
+    "score": 3.794971350552818,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406115.4641232,
+    "zone": "Z03",
+    "score": 4.356386341768382,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406120.4708853,
+    "zone": "Z02",
+    "score": 4.279745183049038,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406120.4791312,
+    "zone": "Z01",
+    "score": 3.793057292789395,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406120.5153937,
+    "zone": "Z03",
+    "score": 4.354186596918144,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406125.4520485,
+    "zone": "Z02",
+    "score": 4.527981739133222,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406125.4630718,
+    "zone": "Z01",
+    "score": 3.7911675224889514,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406125.4969182,
+    "zone": "Z03",
+    "score": 4.352018313164293,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406222.682711,
+    "zone": "Z02",
+    "score": 4.484173734601968,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406222.6998131,
+    "zone": "Z01",
+    "score": 3.7544858777999757,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406222.7362692,
+    "zone": "Z03",
+    "score": 4.309909001917689,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406225.5840962,
+    "zone": "Z02",
+    "score": 4.48287302660189,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406225.594315,
+    "zone": "Z01",
+    "score": 3.7533994110478743,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406225.6417174,
+    "zone": "Z03",
+    "score": 4.308657091876871,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406231.2710493,
+    "zone": "Z02",
+    "score": 4.480324626707369,
+    "action": "WAIT FOR UPDATE"
+  },
+  {
+    "time": 1773406231.2824376,
+    "zone": "Z01",
+    "score": 3.7512652598037164,
+    "action": "SAFE TO MOVE"
+  },
+  {
+    "time": 1773406231.299484,
+    "zone": "Z03",
+    "score": 4.306220296356284,
+    "action": "WAIT FOR UPDATE"
+  }
+]
